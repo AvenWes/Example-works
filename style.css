@@ -1,10 +1,17 @@
 .navbar {
   background-image: linear-gradient(
     45deg,
-    rgba(114, 225, 255, 0.764),
+    rgba(88, 219, 255, 0.764),
     rgba(235, 214, 255, 0.6)
   );
   box-shadow: 0 0 10px rgba(147, 147, 147, 0.401);
+  animation-name: navbarAnimation;
+  animation-duration: 0.6s;
+  animation-timing-function: ease;
+  position: fixed; /* Сделайте его липким/фиксированным */
+  top: 0; /* Оставайтесь на вершине */
+  width: 100%; /* Полная ширина */
+  transition: top 0.3s;
 }
 .nav-item {
   display: inline;
@@ -13,18 +20,27 @@
 .nan-link {
   display: inline;
 }
+.logoTiero {
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+.logoTiero:hover {
+  transform: scale(1.03);
+}
 .body {
   background-image: linear-gradient(
     180deg,
-    rgba(152, 236, 255, 0.825),
+    rgba(164, 238, 255, 0.639),
     rgba(235, 214, 255, 0.6)
   );
   /* background-image: repeating-linear-gradient(90deg, white, grey); */
 }
 .MainPhoto {
   float: right;
-  padding-right: 10ch;
-  padding-top: 3em;
+  padding-right: 5em;
+  animation-name: mainPhotoAnimation;
+  animation-duration: 1s;
+  animation-timing-function: ease;
 }
 .table-borderless {
   display: inline;
@@ -40,9 +56,9 @@
   margin: auto;
   padding: 0.5em;
   background-image: linear-gradient(
-    45deg,
-    rgba(210, 221, 255, 0.805),
-    rgba(214, 248, 255, 0.85)
+    30deg,
+    rgba(182, 200, 255, 0.578),
+    #d4f7ffbb
   );
 }
 .imgGrapf {
@@ -65,33 +81,69 @@
 .card {
   animation-name: animationCard;
   transition-duration: 0.3s;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-timing-function: ease;
 }
 
-/* @keyframes animationCard {
+@keyframes animationCard {
   from {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.02);
+    transform: scale(0.8);
+    opacity: 0;
   }
   to {
     transform: scale(1);
+    opacity: 1;
   }
-} */
+}
 .card:hover {
-  transform: scale(1.03);
+  transform: scale(1.04);
 }
 .nav-item {
   transition-duration: 0.2s;
   transition-timing-function: linear;
 }
 .nav-item:hover {
-  transform: scale(1.04);
+  transform: scale(1.05);
   text-decoration-line: underline;
 }
 .cityImg {
   width: 100%;
+}
+@keyframes navbarAnimation {
+  0% {
+    height: 3%;
+    width: 80%;
+  }
+  100% {
+    height: 11%;
+    width: 100%;
+  }
+}
+.col-lg-6 {
+  animation-name: mainTextAnimation;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+}
+@keyframes mainTextAnimation {
+  from {
+    color: transparent;
+    margin: 20%;
+  }
+  to {
+    margin: 0%;
+    color: black;
+  }
+}
+@keyframes mainPhotoAnimation {
+  from {
+    width: 0%;
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+    width: 37%;
+  }
 }
