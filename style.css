@@ -1,3 +1,11 @@
+.navbar {
+  background-image: linear-gradient(
+    45deg,
+    rgba(114, 225, 255, 0.764),
+    rgba(235, 214, 255, 0.6)
+  );
+  box-shadow: 0 0 10px rgba(147, 147, 147, 0.401);
+}
 .nav-item {
   display: inline;
   margin: 10px;
@@ -7,13 +15,83 @@
 }
 .body {
   background-image: linear-gradient(
-    45deg,
-    rgba(154, 236, 255, 0.469),
-    rgba(157, 195, 255, 0.509)
+    180deg,
+    rgba(152, 236, 255, 0.825),
+    rgba(235, 214, 255, 0.6)
   );
   /* background-image: repeating-linear-gradient(90deg, white, grey); */
 }
 .MainPhoto {
   float: right;
   padding-right: 10ch;
+  padding-top: 3em;
+}
+.table-borderless {
+  display: inline;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+.card-deck {
+  padding: 0.5em;
+}
+.card {
+  display: inline;
+  border-radius: 3em;
+  margin: auto;
+  padding: 0.5em;
+  background-image: linear-gradient(
+    45deg,
+    rgba(210, 221, 255, 0.805),
+    rgba(214, 248, 255, 0.85)
+  );
+}
+.imgGrapf {
+  width: 10em;
+}
+.card {
+  border-radius: 3em;
+  text-align: left;
+  padding: 0.5em;
+}
+.card:hover {
+  background-color: rgba(217, 251, 255, 0.644);
+}
+.card {
+  background-color: rgba(226, 226, 226, 0.534);
+}
+.card {
+  box-shadow: 0 0 10px rgba(147, 147, 147, 0.401);
+}
+.card {
+  animation-name: animationCard;
+  transition-duration: 0.3s;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/* @keyframes animationCard {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  to {
+    transform: scale(1);
+  }
+} */
+.card:hover {
+  transform: scale(1.03);
+}
+.nav-item {
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+.nav-item:hover {
+  transform: scale(1.04);
+  text-decoration-line: underline;
+}
+.cityImg {
+  width: 100%;
 }
