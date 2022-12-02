@@ -6,7 +6,7 @@
   );
   box-shadow: 0 0 12px rgba(147, 147, 147, 0.401);
   animation-name: navbarAnimation;
-  animation-duration: 0.6s;
+  animation-duration: 1s;
   animation-timing-function: ease;
   position: fixed; /* Сделайте его липким/фиксированным */
   top: 0; /* Оставайтесь на вершине */
@@ -39,7 +39,7 @@
   float: right;
   padding-right: 5em;
   animation-name: mainPhotoAnimation;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-timing-function: ease;
 }
 .table-borderless {
@@ -55,25 +55,23 @@
   border-radius: 3em;
   margin: auto;
   padding: 0.5em;
+  max-width: max-content !important;
+  min-width: max-content !important;
   background-image: linear-gradient(
     30deg,
-    rgba(182, 200, 255, 0.578),
-    #d4f7ffbb
+    rgba(214, 224, 255, 0.578),
+    #d6f7ffbb
   );
 }
 .imgGrapf {
   width: 10em;
 }
 .card {
-  border-radius: 3em;
-  text-align: left;
-  padding: 0.5em;
+  border-radius: 1em !important;
+  padding: 0 !important;
 }
 .card:hover {
   background-color: rgba(217, 251, 255, 0.644);
-}
-.card {
-  background-color: rgba(226, 226, 226, 0.534);
 }
 .card {
   box-shadow: 0 0 15px rgba(126, 90, 146, 0.499);
@@ -147,9 +145,19 @@
   }
 }
 .btn {
+  width: 390px !important;
+  border-radius: 1em !important;
+  border-top-left-radius: 0em !important;
+  border-top-right-radius: 0em !important;
   background-image: linear-gradient(
     30deg,
-    rgba(100, 129, 215, 0.578),
-    #3fc4e2bb
+    rgba(0, 0, 0, 0.578),
+    #407480bb
   ) !important;
+}
+.InvestGraph {
+  width: 390px;
+  margin: 0;
+  padding: 0;
+  border-radius: 1em;
 }
