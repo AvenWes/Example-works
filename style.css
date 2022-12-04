@@ -52,7 +52,6 @@
 }
 .card {
   display: inline;
-  border-radius: 3em;
   margin: auto;
   padding: 0.5em;
   max-width: max-content !important;
@@ -67,7 +66,7 @@
   width: 10em;
 }
 .card {
-  border-radius: 1em !important;
+  border-radius: 1.5em !important;
   padding: 0 !important;
 }
 .card:hover {
@@ -145,19 +144,59 @@
   }
 }
 .btn {
-  width: 390px !important;
   border-radius: 1em !important;
-  border-top-left-radius: 0em !important;
-  border-top-right-radius: 0em !important;
+  width: 360px !important;
+  margin-left: 15px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  /* border-top-left-radius: 0em !important;
+  border-top-right-radius: 0em !important; */
   background-image: linear-gradient(
     30deg,
-    rgba(0, 0, 0, 0.578),
-    #407480bb
+    rgba(32, 23, 36, 0.578),
+    #241922cd
   ) !important;
 }
 .InvestGraph {
   width: 390px;
   margin: 0;
   padding: 0;
+  border-top-left-radius: 0em !important;
+  border-top-right-radius: 0em !important;
+  border-radius: 1.5em;
+}
+
+.dropdown-content {
+  width: 390px;
+  opacity: 0;
+}
+
+.dropdown-content:not(.menu) {
+  overflow: hidden;
+  max-height: 0em;
+  transition: 1.2s ease;
+}
+
+.card:hover > .dropdown-content {
+  opacity: 1;
+  max-height: 12em;
+  padding-top: 16px;
+  transition: 1s ease;
   border-radius: 1em;
+}
+.HeaderCard {
+  padding-top: 8px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: monospace;
+}
+.HeaderCardConteiner {
+  border-top-left-radius: 1.5em;
+  border-top-right-radius: 1.5em;
+}
+.Description {
+  padding-top: 5px;
+  text-align: center;
+  padding-left: 16px;
+  padding-right: 16px;
 }
