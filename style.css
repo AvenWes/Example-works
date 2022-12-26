@@ -31,8 +31,8 @@
 .body {
   background-image: linear-gradient(
     180deg,
-    rgba(164, 238, 255, 0.639),
-    rgba(235, 214, 255, 0.6)
+    rgba(194, 244, 255, 0.559),
+    rgba(244, 232, 255, 0.6)
   );
   /* background-image: repeating-linear-gradient(90deg, white, grey); */
 }
@@ -146,8 +146,8 @@
 }
 .btn {
   border-radius: 1em !important;
-  width: 360px !important;
-  margin-left: 15px;
+  width: 300px !important;
+  margin-left: 25px;
   margin-right: 10px;
   margin-bottom: 10px;
   /* border-top-left-radius: 0em !important;
@@ -169,7 +169,7 @@
 }
 
 .InvestGraph {
-  width: 390px;
+  width: 350px;
   margin: 0;
   padding: 0;
   border-top-left-radius: 0em !important;
@@ -178,7 +178,7 @@
 }
 
 .dropdown-content {
-  width: 390px;
+  width: 350px;
   opacity: 0;
 }
 
