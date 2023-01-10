@@ -8,7 +8,7 @@
   animation-name: navbarAnimation;
   animation-duration: 1s;
   animation-timing-function: ease;
-  position: fixed !important; /* Сделайте его липким/фиксированным */
+  position: fixed !important; /* Сделал его липким/фиксированным */
   top: 0 !important; /* Оставайтесь на вершине */
   width: 100% !important; /* Полная ширина */
   transition: top 0.3s !important;
